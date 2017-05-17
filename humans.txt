@@ -6,6 +6,7 @@
     <name> -- <role> -- <twitter>
 
     Sylvain BAILLOT -- Développeur -- s.baillot59@gmail.com
+    Florent lequibain -- dev -- @Flo_Lequibain
 
 # THANKS
 
