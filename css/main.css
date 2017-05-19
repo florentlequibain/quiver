@@ -104,8 +104,102 @@ textarea {
 = =                                                                       = =
    ========================================================================== */
 
+/*~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~*/
 
+html,
+body {
+  overflow-x: hidden;
+}
 
+/* wrapper styles */
+.wrapper1 {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* small screens styles */
+@media (max-width: 767px) {
+  .sidebar1 {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    min-height: 100vh;
+  }
+  .wrapper1 {
+    transform: translateX(0) translateZ(0);
+    transition: transform .2s;
+    will-change: transform;
+  }
+
+  /* Button deco */
+  [class^="nav-button"] {
+    display: block;
+    z-index: 1;
+    height: 3.5rem; width: 3.5rem;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #333, #333),
+      linear-gradient(to right, #333, #333),
+      linear-gradient(to right, #333, #333);
+    background-position: center top, center, center bottom;
+    background-repeat: no-repeat;
+    background-size: 3.5rem .9rem;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color:rgba(239,158,9,1);
+;
+  }
+
+  /* here's goes the push left effect */
+  body:target .wrapper1 {
+    transform: translateX(100vw);
+  }
+  .nav-button-close,
+  body:target .nav-button-open {
+    display: none;
+  }
+  .nav-button-open,
+  body:target .nav-button-close {
+    display: block;
+  }
+
+} /* end of small screen media query */
+
+/* Global deco */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 1.6em;
+  font-family: arial, sans-serif;
+}
+a {
+  color: #fff;
+}
+.wrapper1 {
+  padding: 2rem;
+  background-color: white;
+  color: #333;
+}
+.sidebar1 {
+  padding-top: 1em;
+  background: rgba(239,158,9,1);
+}
+nav a {
+  display: block;
+  padding: .7em;
+  text-decoration: none;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~  SYLVAIN   ~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
 
