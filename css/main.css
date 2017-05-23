@@ -261,8 +261,12 @@ to {
   /*~~~~~~End Images slide~~~*/
 
 /*~~~~~~~~~~~~~~~~~~ END FEATURES SECTION IMG SLIDE 0-900px ~~~~~~~~~~~~~~*/
+
+
+
+/*~~~~~~~~~~~~~~~~~~ SECOND CONTAINER ~~~~~~~~~~~~~~*/
 .secondcontainer{
-  margin-top: 40px;
+  margin-top: 60px;
   background-color: red;
 }
 .secondcontainerarticle{
@@ -270,15 +274,24 @@ to {
   margin: 15px;
 }
 
+.secondcontainerarticle figure img{
+  width: 100%;
+  height: auto;
+}
 
-/*~~~~~~~~~~~~~~~~~~ SECOND CONTAINER ~~~~~~~~~~~~~~*/
+.secondcontainerarticle figure{
+  width: 60px;
+  padding: 0;
+  margin: 0;
+}
 
-
-
-
-
+.secondcontainerarticle p{
+  color:rgba(141, 156, 185, 1);
+}
 /*~~~~~~~~~~~~~~~~~~ END SECOND CONTAINER ~~~~~~~~~~~~~~*/
 
+/*~~~~~~~~~~~~~~~~~~ THIRD CONTAINER ~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~ END THIRD CONTAINER ~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~  MEDIA 900px   ~~~~~~~~~~~~~~~~*/
