@@ -104,11 +104,14 @@ textarea {
 = =                                                                       = =
    ========================================================================== */
 
-/*~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~ HEADER 0-900px ~~~~~~~~~~~~~~~~~~*/
 header{
   height: 100px;
+  width: 100%;
+  top: 0;
   border: none;
   background-color: red;
+  position: absolute;
 }
 
 .divnavheader{
@@ -174,10 +177,115 @@ header nav a{
 }
 /*~~~~~~SignIn~~~~~~~*/
 
+/*~~~~~~~~~~~~~~~~~~ END HEADER 0-900px ~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~ FEATURES SECTION IMG SLIDE 0-900px ~~~~~~~~~~~~~~~~~~*/
+  .featuresimgslide{
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .featurestexth1{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+    width: 80%;
+  }
+
+  .featurestexth1 h1{
+    font-size: 2em;
+  }
+  /*~~~~~~Images slide~~~~~~~*/
+  .mobile1 img, .mobile2 img, .pc img{
+    width: 100%;
+    height: auto;
+  }
+
+  .mobile1{
+    width: 100px;
+    position: absolute;
+    top:100vh;
+    left: 6vw;
+    animation-name: transition1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+  }
+
+   .mobile2{
+    width: 100px;
+    position: absolute;
+    top:100vh;
+    left: 15vw;
+    z-index: 1;
+    animation-name: transition1;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .pc{
+    width: 450px;
+    position: absolute;
+    z-index: 0;
+    left: 100vw;
+    bottom: -5vh;
+    animation-name: transition2;
+    animation-duration: 2.7s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes transition1 {
+ from {
+   top:90vh;
+ }
+ to {
+   top: 65vh;
+ }
+}
+
+@keyframes transition2 {
+from {
+ left:100vw;
+}
+to {
+ left: 23vw;
+}
+}
+  /*~~~~~~End Images slide~~~*/
+
+/*~~~~~~~~~~~~~~~~~~ END FEATURES SECTION IMG SLIDE 0-900px ~~~~~~~~~~~~~~*/
+.secondcontainer{
+  margin-top: 40px;
+  background-color: red;
+}
+.secondcontainerarticle{
+  background-color: green;
+  margin: 15px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~ SECOND CONTAINER ~~~~~~~~~~~~~~*/
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~ END SECOND CONTAINER ~~~~~~~~~~~~~~*/
+
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~  MEDIA 900px   ~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~ HEADER 900-1280px ~~~~~~~~~~~~~~~~~~*/
 
 @media (min-width:900px){
 
@@ -216,8 +324,21 @@ header nav a{
     transition-timing-function: ease-in;
   }
   /*~~~~~~logo quiver~~~~~~~*/
+
+  .getgb{
+    background-color: rgba(247, 158, 2, 1);
+    margin-right: 20px;
+    border-radius: 25px;
+    color: white;
+  }
+
+  .getgb:hover{
+    border: solid 2px white;
+    background-color: none;
+  }
 }
 
+/*~~~~~~~~~~~~~~~~~~ END HEADER 900-1280px ~~~~~~~~~~~~~~~~~~*/
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
