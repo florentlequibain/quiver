@@ -268,6 +268,7 @@ to {
 .secondcontainer{
   margin-top: 60px;
   background-color: red;
+  padding-bottom: 60px;
 }
 .secondcontainerarticle{
   background-color: green;
@@ -291,6 +292,40 @@ to {
 /*~~~~~~~~~~~~~~~~~~ END SECOND CONTAINER ~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~ THIRD CONTAINER ~~~~~~~~~~~~~~*/
+.thirdcontainer{
+  margin-top: 60px;
+  background-color: blue;
+  padding-bottom: 60px;
+}
+.thirdcontainerarticle{
+  background-color: green;
+  margin: 15px;
+}
+
+.thirdcontainerarticle figure img{
+  width: 100%;
+  height: auto;
+}
+
+.thirdcontainerlogo{
+  width: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+.thirdcontainerimgpc{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.thirdcontainerarticle h5{
+  color: white;
+}
+
+.thirdcontainerarticle p{
+  color:white;
+}
 /*~~~~~~~~~~~~~~~~~~ END THIRD CONTAINER ~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
