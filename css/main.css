@@ -106,19 +106,19 @@ textarea {
 
 /*~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~*/
 
-html,
+/*html,
 body {
   overflow-x: hidden;
 }
-
+*/
 /* wrapper styles */
-.wrapper1 {
+/*.wrapper1 {
   position: relative;
   min-height: 100vh;
-}
+}*/
 
 /* small screens styles */
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
   .sidebar1 {
     position: absolute;
     top: 0;
@@ -129,10 +129,10 @@ body {
     transform: translateX(0) translateZ(0);
     transition: transform .2s;
     will-change: transform;
-  }
+  }*/
 
   /* Button deco */
-  [class^="nav-button"] {
+/*  [class^="nav-button"] {
     display: block;
     z-index: 1;
     height: 3.5rem; width: 3.5rem;
@@ -149,10 +149,10 @@ body {
     cursor: pointer;
     -webkit-tap-highlight-color:rgba(239,158,9,1);
 ;
-  }
+  }*/
 
   /* here's goes the push left effect */
-  body:target .wrapper1 {
+  /*body:target .wrapper1 {
     transform: translateX(100vw);
   }
   .nav-button-close,
@@ -164,10 +164,11 @@ body {
     display: block;
   }
 
-} /* end of small screen media query */
+} */
+/* end of small screen media query */
 
 /* Global deco */
-* {
+/** {
   box-sizing: border-box;
 }
 html {
@@ -197,62 +198,155 @@ nav a {
   padding: .7em;
   text-decoration: none;
 }
+*/
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~  SYLVAIN   ~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/*FOOTER*/
-/*@font-face {
-font-family: 'Avenir LT Std 35 Light';
-font-style: normal;
-font-weight: normal;
-src: local('../fonts/Avenir LT Std 35 Light'), url('../fonts/AvenirLTStd-Light.woff') format('woff');
-}*/
 
+/*START OF INDEX SECTION*/
+body {
+  padding: 16px 16px 0 16px;
+}
+
+.mainSection {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: url(../img/home-alone.png), linear-gradient( 120deg, #00f2cd 0%, #21daeb 100%), no-repeat;
+  background-position: center;
+  padding: 15% 10% 0 10%;
+}
+
+.mainSection h1 {
+  font-size: 55px;
+  letter-spacing: -1px;
+}
+
+.mainSection h1+p {
+  font-size: 35px;
+}
+
+.mainSection form+p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.send {
+  font-size: .5em;
+  border: 2px solid;
+  padding: 14px 30px 12px 30px;
+  margin: 0 14px;
+}
+
+.mainSection form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainSection input {
+  width: auto;
+  height: 60px;
+  border-radius: 50px;
+  padding: 0 50px;
+}
+
+.mainSection .mail {
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+}
+
+.mainSection .submit {
+  border: 2px solid #f79e02;
+  background-color: #f79e02;
+  transition: .1s ease;
+}
+
+.mainSection .submit:hover {
+  background-color: transparent;
+  border-color: white;
+}
+
+.mainSection input[type=text]:focus {
+  border-bottom: none;
+}
+
+
+/* START OF FOOTER*/
 
 footer {
   height: 380px;
-  background-color: #f6f9f9;;
+  background-color: #f6f9f9;
 }
 
 footer .row {
   height: 100%;
+  padding: 0;
 }
 
-footer  a{
-  color: black;
+.footerLeft .link a, .footerRight p, .footerRight form {
+  padding-left: 50px !important;
 }
 
 .footerLeft {
   background-color: white;
-  margin: auto;
   height: 100%;
 }
 
+.link li {
+  margin-bottom: 20px;
+}
+
+.link a {
+  color: #242930;
+  font-size: 1.3em;
+}
+
+.social, .footerRight {
+  color: #7C8A96;
+}
+
+.social a{
+  color: #18E2BF;
+}
+
+.footerRight p {
+  font-size: 1.8em
+}
+
+/*formulaire mail*/
+
 /* label color */
-.input-field input[type=email] + label {
+footer .input-field input[type=email] + label {
  color: #18E2BF;
  font-size: 1.5em;
  font-weight: bold;
 }
+
 /* label underline color */
-.input-field input[type=email] {
+footer .input-field input[type=email] {
  border-bottom: 1px solid #18E2BF;
  box-shadow: 0 1px 0 0 #18E2BF;
  font-size: 1.5em;
  color: #18E2BF;
  max-width: 435px;
  padding: 0 0 10px 0;
- /*background-color: black*/
 }
+
 /* label focus color */
-.input-field input[type=email]:focus + label {
+footer .input-field input[type=email]:focus + label {
  color: #7c8a96;
  font-size: 1em;
  font-weight: bold;
 }
+
 /* label underline focus color */
-.input-field input[type=email]:focus {
+footer .input-field input[type=email]:focus {
  border-bottom: 1px solid #18E2BF;
  box-shadow: 0 1px 0 0 #18E2BF;
 }
