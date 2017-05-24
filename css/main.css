@@ -208,6 +208,7 @@ nav a {
 /*START OF INDEX SECTION*/
 body {
   padding: 16px 16px 0 16px;
+  background-color: #f6f9f9;
 }
 
 .mainSection {
@@ -274,6 +275,37 @@ body {
 
 .mainSection input[type=text]:focus {
   border-bottom: none;
+}
+
+/*START OF PRICING SECTION*/
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ slider ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.myCarousel {
+  min-height: auto !important;
+}
+
+.myCarousel .slides {
+  background-color: inherit;
+  height: auto;
+  padding: auto;
+}
+
+.myCarousel .slider .slides li figure {
+  height: 25%;
+  width: 25%;
+  margin: auto;
+}
+
+.myCarousel .slider .slides li img {
+  height: 100%;
+  width: 100%;
+}
+
+.myCarousel .slides li p {
+  font-size: 40px;
+  /*padding: 10% !important;*/
+  margin: 0 15%;
 }
 
 
