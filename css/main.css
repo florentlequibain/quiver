@@ -103,384 +103,194 @@ textarea {
 = =                                                                       = =
 = =                                                                       = =
    ========================================================================== */
-body{
-  overflow-x: hidden;
-}
-/*~~~~~~~~~~~~~~~~~~ HEADER 0-900px ~~~~~~~~~~~~~~~~~~*/
-header{
-  height: 100px;
-  width: 100%;
-  top: 0;
-  border: none;
-  position: absolute;
-}
-
-.divnavheader{
-  height: 100%;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-  box-sizing: content-box;
-
-}
-
-header nav{
-  height: 100%;
-  box-shadow: none;
-}
-
-header nav a{
-  color: black;
-}
-
-.signin{
-  display:block;
-  float: right;
-}
-
-.nav-wrapper{
-  border-bottom: none;
-}
-
-.headernavtext{
-  color:white;
-}
-
-.headernavtext:hover{
-  color:rgba(246, 249, 249, 0.5);
-  background-color:rgba(246, 249, 249, 0.0);
-}
-
-/*~~~~~~logo quiver~~~~~~~*/
-#id-txt{
-  display: none;
-}
-
-#id-q{
-  fill:white;
-}
-
-.containersvglogo{
-  width: 40px;
-}
-/*~~~~~~logo quiver~~~~~~~*/
-
-
-
-/*~~~~~~burger nav~~~~~~~*/
-.burgernav{
-  color: white;
-}
-/*~~~~~~burger nav~~~~~~~*/
-
-/*~~~~~~SignIn~~~~~~~*/
-.signinmobile{
-}
-/*~~~~~~SignIn~~~~~~~*/
-
-/*~~~~~~~~~~~~~~~~~~ END HEADER 0-900px ~~~~~~~~~~~~~~~~~~*/
-
-/*~~~~~~~~~~~~~~~~~~ FEATURES SECTION IMG SLIDE 0-900px ~~~~~~~~~~~~~~~~~~*/
-  .featuresimgslide{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-image:linear-gradient(to right,rgba(248, 53, 93, 1), rgba(242, 66, 54, 1));
-  }
-
-  .featurestexth1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 80px;
-    width: 80%;
-    color: white;
-  }
-
-  .featurestexth1 h1{
-    font-size: 2em;
-  }
-  /*~~~~~~Images slide~~~~~~~*/
-  .mobile1 img, .mobile2 img, .pc img{
-    width: 100%;
-    height: auto;
-  }
-
-  .mobile1{
-    width: 100px;
-    position: absolute;
-    top:100vh;
-    left: 6vw;
-    animation-name: transition1;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    z-index: 2;
-  }
-
-   .mobile2{
-    width: 100px;
-    position: absolute;
-    top:100vh;
-    left: 15vw;
-    z-index: 1;
-    animation-name: transition1;
-    animation-duration: 2.5s;
-    animation-fill-mode: forwards;
-  }
-
-  .pc{
-    width: 450px;
-    position: absolute;
-    z-index: 0;
-    left: 100vw;
-    bottom: -5vh;
-    animation-name: transition2;
-    animation-duration: 2.7s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes transition1 {
- from {
-   top:90vh;
- }
- to {
-   top: 65vh;
- }
-}
-
-@keyframes transition2 {
-from {
- left:100vw;
-}
-to {
- left: 23vw;
-}
-}
-  /*~~~~~~End Images slide~~~*/
-
-  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  /*~~~~~~~~~~~~~MEDIA min 641~~~~~~~~~~~*/
-  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
-/*~~~~~~~~~~~~~~~~~~ END FEATURES SECTION IMG SLIDE 0-900px ~~~~~~~~~~~~~~*/
-
-
-
-/*~~~~~~~~~~~~~~~~~~ SECOND CONTAINER ~~~~~~~~~~~~~~*/
-.secondcontainer, .fourthcontainer{
-  margin-top: 60px;
-  padding-bottom: 60px;
-}
-.secondcontainerarticle, .fourthcontainerarticle{
-  margin: 20px;
-}
-
-.secondcontainerarticle h5, .fourthcontainerarticle h5, .thirdcontainerarticle h5{
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.secondcontainerarticle figure img, .fourthcontainerarticle figure img{
-  width: 100%;
-  height: auto;
-}
-
-.secondcontainerarticle figure, .fourthcontainerarticle figure{
-  width: 60px;
-  padding: 0;
-  margin: 0;
-}
-
-.secondcontainerarticle p, .fourthcontainerarticle p{
-  color:rgba(141, 156, 185, 1);
-}
-/*~~~~~~~~~~~~~~~~~~ END SECOND CONTAINER ~~~~~~~~~~~~~~*/
-
-/*~~~~~~~~~~~~~~~~~~ THIRD CONTAINER ~~~~~~~~~~~~~~*/
-.thirdcontainer{
-  margin-top: 60px;
-  padding-bottom: 60px;
-  background-color: rgba(40, 43, 52,1);
-}
-
-.thirdcontainerarticle{
-  margin: 20px;
-}
-
-.thirdcontainerarticle figure img{
-  width: 100%;
-  height: auto;
-}
-
-.thirdcontainerlogo{
-  width: 60px;
-  padding: 0;
-  margin: 0;
-}
-
-.thirdcontainerimgpc{
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.thirdcontainerarticle h5{
-  color: white;
-}
-
-.thirdcontainerarticle p{
-  color:white;
-}
-/*~~~~~~~~~~~~~~~~~~ END THIRD CONTAINER ~~~~~~~~~~~~~~*/
-
-
-/*~~~~~~~~~~~~~~~~~~ FIFTH CONTAINER ~~~~~~~~~~~~~~*/
-.fifthcontainerarticle1{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  background-image:linear-gradient(to right,rgba(248, 53, 93, 1), rgba(242, 66, 54, 1));
-}
-
-.fifthcontainerarticle1 h2{
-  text-align: center;
-}
-
-.fifthcontainerarticle1 a{
-  height: 45px;
-  color: white;
-  padding: 15px;
-  margin-top: 40px;
-  margin-bottom: 50px;
-  background-color: rgba(255, 245, 230, 0.6);
-  border-radius: 50px;
-  font-weight: bold;
-}
-
-.fifthcontainerarticle1 figure img, .fifthcontainerarticle2 figure img{
-  width: 100%;
-  height: auto;
-  margin: 0;
-}
-
-.fifthcontainerarticle1 figure, .fifthcontainerarticle2 figure{
-  margin: 0;
-  padding: 0;
-}
-
-.cloud{
-  width: 60px;
-  margin: 0;
-  padding: 0;
-  margin-top: 40px;
-}
-
-.fifthcontainerarticle2 h5{
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.microsoft img{
-  width: 100%;
-  height: auto;
-}
-
-.microsoft{
-  margin-top: 40px;
-}
-
-.fifthcontainerarticle2fond{
-  background-color: rgba(246, 249, 249, 1);
-  margin-top: 0;
-}
-
-/*~~~~~~~~~~~~~~~~~~ END FIFTH CONTAINER ~~~~~~~~~~~~~~*/
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/*~~~~~~~~~~~~~~~~  MEDIA 900px   ~~~~~~~~~~~~~~~~*/
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
-/*~~~~~~~~~~~~~~~~~~ HEADER 900-1280px ~~~~~~~~~~~~~~~~~~*/
-
-@media (min-width:900px){
-
-  .signin{
-    color:rgba(21, 226, 224, 1);
-    background-color: white;
-    border-radius: 25px;
-  }
-
-  .signin:hover{
-    border: solid 2px white;
-    background-color: none;
-    color:white;
-  }
-
-  /*~~~~~~logo quiver~~~~~~~*/
-  #id-txt{
-    display: block;
-  }
-
-  #id-txt{
-    fill:white;
-  }
-
-  .containersvglogo{
-    width: 43px;
-    height: 60px;
-    overflow: hidden;
-  }
-
-  .containersvglogo:hover{
-    width: 165px;
-    transition-property: width;
-    transition-duration: 0.4s;
-    transition-timing-function: ease-in;
-  }
-  /*~~~~~~logo quiver~~~~~~~*/
-
-  .getgb{
-    background-color: rgba(247, 158, 2, 1);
-    margin-right: 20px;
-    border-radius: 25px;
-    color: white;
-  }
-
-  .getgb:hover{
-    border: solid 2px white;
-    background-color: none;
-  }
-
-  body{
-    margin: 10px;
-  }
-
-.pc{
-  width: 600px;
-}
-
-.mobile1, .mobile2{
-  width:200px;
-}
-}
 
 /*~~~~~~~~~~~~~~~~~~ END HEADER 900-1280px ~~~~~~~~~~~~~~~~~~*/
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~  SYLVAIN   ~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
+/*START OF INDEX SECTION*/
+body {
+  padding: 16px 16px 0 16px;
+  background-color: #f6f9f9;
+}
+
+.mainSection {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: url(../img/home-alone.png), linear-gradient( 120deg, #00f2cd 0%, #21daeb 100%), no-repeat;
+  background-position: center;
+  padding: 15% 10% 0 10%;
+}
+
+.mainSection h1 {
+  font-size: 55px;
+  letter-spacing: -1px;
+}
+
+.mainSection h1+p {
+  font-size: 35px;
+}
+
+.mainSection form+p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.send {
+  font-size: .5em;
+  border: 2px solid;
+  padding: 14px 30px 12px 30px;
+  margin: 0 14px;
+}
+
+.mainSection form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainSection input {
+  width: auto;
+  height: 60px;
+  border-radius: 50px;
+  padding: 0 50px;
+}
+
+.mainSection .mail {
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+}
+
+.mainSection .submit {
+  border: 2px solid #f79e02;
+  background-color: #f79e02;
+  transition: .1s ease;
+}
+
+.mainSection .submit:hover {
+  background-color: transparent;
+  border-color: white;
+}
+
+.mainSection input[type=text]:focus {
+  border-bottom: none;
+}
+
+/*START OF PRICING SECTION*/
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ slider ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.myCarousel {
+  min-height: auto !important;
+}
+
+.myCarousel .slides {
+  background-color: inherit;
+  height: auto;
+  padding: auto;
+}
+
+.myCarousel .slider .slides li figure {
+  height: 25%;
+  width: 25%;
+  margin: auto;
+}
+
+.myCarousel .slider .slides li img {
+  height: 100%;
+  width: 100%;
+}
+
+.myCarousel .slides li p {
+  font-size: 40px;
+  /*padding: 10% !important;*/
+  margin: 0 15%;
+}
+
+
+/* START OF FOOTER*/
+
+footer {
+  height: 380px;
+  background-color: #f6f9f9;
+}
+
+footer .row {
+  height: 100%;
+  padding: 0;
+}
+
+.footerLeft .link a, .footerRight p, .footerRight form {
+  padding-left: 50px !important;
+}
+
+.footerLeft {
+  background-color: white;
+  height: 100%;
+}
+
+.link li {
+  margin-bottom: 20px;
+}
+
+.link a {
+  color: #242930;
+  font-size: 1.3em;
+}
+
+.social, .footerRight {
+  color: #7C8A96;
+}
+
+.social a{
+  color: #18E2BF;
+}
+
+.footerRight p {
+  font-size: 1.8em
+}
+
+/*formulaire mail*/
+
+/* label color */
+footer .input-field input[type=email] + label {
+ color: #18E2BF;
+ font-size: 1.5em;
+ font-weight: bold;
+}
+
+/* label underline color */
+footer .input-field input[type=email] {
+ border-bottom: 1px solid #18E2BF;
+ box-shadow: 0 1px 0 0 #18E2BF;
+ font-size: 1.5em;
+ color: #18E2BF;
+ max-width: 435px;
+ padding: 0 0 10px 0;
+}
+
+/* label focus color */
+footer .input-field input[type=email]:focus + label {
+ color: #7c8a96;
+ font-size: 1em;
+ font-weight: bold;
+}
+
+/* label underline focus color */
+footer .input-field input[type=email]:focus {
+ border-bottom: 1px solid #18E2BF;
+ box-shadow: 0 1px 0 0 #18E2BF;
+}
 
 
    /* ==========================================================================
