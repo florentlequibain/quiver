@@ -103,14 +103,15 @@ textarea {
 = =                                                                       = =
 = =                                                                       = =
    ========================================================================== */
-
+body{
+  overflow-x: hidden;
+}
 /*~~~~~~~~~~~~~~~~~~ HEADER 0-900px ~~~~~~~~~~~~~~~~~~*/
 header{
   height: 100px;
   width: 100%;
   top: 0;
   border: none;
-  background-color: red;
   position: absolute;
 }
 
@@ -182,21 +183,21 @@ header nav a{
 /*~~~~~~~~~~~~~~~~~~ FEATURES SECTION IMG SLIDE 0-900px ~~~~~~~~~~~~~~~~~~*/
   .featuresimgslide{
     height: 100vh;
-    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-image:linear-gradient(to right,rgba(248, 53, 93, 1), rgba(242, 66, 54, 1));
   }
 
   .featurestexth1{
-    background-color: green;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding-top: 80px;
     width: 80%;
+    color: white;
   }
 
   .featurestexth1 h1{
@@ -260,33 +261,41 @@ to {
 }
   /*~~~~~~End Images slide~~~*/
 
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /*~~~~~~~~~~~~~MEDIA min 641~~~~~~~~~~~*/
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
 /*~~~~~~~~~~~~~~~~~~ END FEATURES SECTION IMG SLIDE 0-900px ~~~~~~~~~~~~~~*/
 
 
 
 /*~~~~~~~~~~~~~~~~~~ SECOND CONTAINER ~~~~~~~~~~~~~~*/
-.secondcontainer{
+.secondcontainer, .fourthcontainer{
   margin-top: 60px;
-  background-color: red;
   padding-bottom: 60px;
 }
-.secondcontainerarticle{
-  background-color: green;
-  margin: 15px;
+.secondcontainerarticle, .fourthcontainerarticle{
+  margin: 20px;
 }
 
-.secondcontainerarticle figure img{
+.secondcontainerarticle h5, .fourthcontainerarticle h5, .thirdcontainerarticle h5{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.secondcontainerarticle figure img, .fourthcontainerarticle figure img{
   width: 100%;
   height: auto;
 }
 
-.secondcontainerarticle figure{
+.secondcontainerarticle figure, .fourthcontainerarticle figure{
   width: 60px;
   padding: 0;
   margin: 0;
 }
 
-.secondcontainerarticle p{
+.secondcontainerarticle p, .fourthcontainerarticle p{
   color:rgba(141, 156, 185, 1);
 }
 /*~~~~~~~~~~~~~~~~~~ END SECOND CONTAINER ~~~~~~~~~~~~~~*/
@@ -294,12 +303,12 @@ to {
 /*~~~~~~~~~~~~~~~~~~ THIRD CONTAINER ~~~~~~~~~~~~~~*/
 .thirdcontainer{
   margin-top: 60px;
-  background-color: blue;
   padding-bottom: 60px;
+  background-color: rgba(40, 43, 52,1);
 }
+
 .thirdcontainerarticle{
-  background-color: green;
-  margin: 15px;
+  margin: 20px;
 }
 
 .thirdcontainerarticle figure img{
@@ -327,6 +336,70 @@ to {
   color:white;
 }
 /*~~~~~~~~~~~~~~~~~~ END THIRD CONTAINER ~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~ FIFTH CONTAINER ~~~~~~~~~~~~~~*/
+.fifthcontainerarticle1{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-image:linear-gradient(to right,rgba(248, 53, 93, 1), rgba(242, 66, 54, 1));
+}
+
+.fifthcontainerarticle1 h2{
+  text-align: center;
+}
+
+.fifthcontainerarticle1 a{
+  height: 45px;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  background-color: rgba(255, 245, 230, 0.6);
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.fifthcontainerarticle1 figure img, .fifthcontainerarticle2 figure img{
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.fifthcontainerarticle1 figure, .fifthcontainerarticle2 figure{
+  margin: 0;
+  padding: 0;
+}
+
+.cloud{
+  width: 60px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.fifthcontainerarticle2 h5{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.microsoft img{
+  width: 100%;
+  height: auto;
+}
+
+.microsoft{
+  margin-top: 40px;
+}
+
+.fifthcontainerarticle2fond{
+  background-color: rgba(246, 249, 249, 1);
+  margin-top: 0;
+}
+
+/*~~~~~~~~~~~~~~~~~~ END FIFTH CONTAINER ~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~  MEDIA 900px   ~~~~~~~~~~~~~~~~*/
@@ -361,7 +434,6 @@ to {
   .containersvglogo{
     width: 43px;
     height: 60px;
-    background-color: green;
     overflow: hidden;
   }
 
@@ -384,9 +456,24 @@ to {
     border: solid 2px white;
     background-color: none;
   }
+
+  body{
+    margin: 10px;
+  }
+
+.pc{
+  width: 600px;
+}
+
+.mobile1, .mobile2{
+  width:200px;
+}
 }
 
 /*~~~~~~~~~~~~~~~~~~ END HEADER 900-1280px ~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
